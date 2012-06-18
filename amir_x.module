@@ -1,0 +1,11 @@
+<?php
+
+function amir_x_node_view_alter(&$build) {
+
+  // (The following is a horrible hack)
+  // Remove 'Read more' if the full item ("safe_value") equals to the teaser text ("#markup")
+  if ($build['body'][0]['#markup'] == $build['body']['#items'][0]['safe_value']){
+    unset($build['links']['node']['#links']['node-readmore']);
+  }
+
+}

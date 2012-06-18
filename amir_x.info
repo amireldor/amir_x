@@ -1,0 +1,4 @@
+name = Amir-X Custom Module
+description = Custom functionality for the Amir-X site.
+core = 7.x
+version = 0.1 alpha :(
